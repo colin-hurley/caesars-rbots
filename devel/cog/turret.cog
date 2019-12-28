@@ -1,0 +1,77 @@
+# Jedi Knight Cog Script
+# Manual Turret Script
+#
+#
+# [GoNs_S_H_A_F_T]
+#
+
+symbols
+message		startup		
+message		activate
+message		blocked
+
+thing		turret		linkid=0
+
+int		rounds=5					desc=rounds
+
+float		rate=0.10				desc=rate
+float		delay=0.5				desc=delay
+float		movespeed=2.0
+float		autoAimZFOV=90
+float		autoAimXFOV=180
+
+int		firing=0					local
+int		cur_round=0				local
+
+template	projectile=+concbullet		local
+
+sound		fireSound=turret-1.wav	local
+int		curframe=0	local
+int		numdoors	local
+int		movestatus	local
+end
+
+## Code Section
+
+code
+
+# .................................................................................................
+
+startup:
+	if (turret >= 0)	numdoors = numdoors + 1;
+
+	return;
+
+# .................................................................................................
+
+activate:
+	call checkstatus;
+	if (movestatus) return;
+	call open_doors;
+	return;
+
+# .................................................................................................
+
+blocked:
+	call open_doors;
+	return;
+
+# .................................................................................................
+
+open_doors:
+		FireProjectile(turret, projectile, fireSound, -1, '0.02683 0.05 0.04', '0 0 0', 1.0, 0x60, autoAimZFOV, autoAimXFOV);
+		FireProjectile(turret, projectile, fireSound, -1, '-0.02683 0.05 0.04', '0 0 0', 1.0, 0x60, autoAimZFOV, autoAimXFOV);
+		Sleep(rate);
+
+	return;
+
+# .................................................................................................
+
+checkstatus:
+	movestatus = ismoving(turret);
+	return;
+
+return;
+
+end
+

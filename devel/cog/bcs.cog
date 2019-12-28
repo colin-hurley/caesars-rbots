@@ -1,0 +1,54 @@
+# Jedi Knight Cog Script
+#
+# C2_BREAKINGGLASS.COG
+#
+# all changes (c) Mark Jones 1998
+# respawns every 60 seconds
+# Generic breaking glass script to be linked to both sides
+# of a breakable glass pane. Will work in conjunction with
+# a client side only script to reduce network trafic.
+#
+# [YB]
+#
+# (C) 1997 LucasArts Entertainment Co. All Rights Reserved
+
+
+symbols
+
+surface     glass                            mask=0x448  desc=glass
+surface     glass2                           mask=0x448  desc=glass_adjoin
+int         spawnpoints=2                    desc=spawn_points
+int         density=5                        desc=density
+int		hurt=0	local
+
+message     damaged
+message	timer
+
+end
+
+# ========================================================================================
+
+code
+
+damaged:
+	if(hurt==1) Return;
+	hurt = 1;
+	SetTimer(60);
+   // Damage the projectile (so raildets don't stick in windows)
+   DamageThing(GetSourceRef(), 10, 0x1, GetSourceRef());
+
+   // Send a TRIGGER_BREAKINGGLASS with its parameters
+   if(GetSenderRef() == glass)
+      SendTrigger(-1, 10001, glass, glass2, spawnpoints, density);
+   else
+      SendTrigger(-1, 10001, glass2, glass, spawnpoints, density);
+
+   Return;
+
+timer:
+	hurt=0;
+	SendTrigger(-1, 10002, glass, glass2, 0, 0);
+	Return;
+end
+
+

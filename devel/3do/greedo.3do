@@ -1,0 +1,91 @@
+# MODEL C:\Ftp\JeD\Projects\Caesars Palace\greedo.3do created by JED 0.94 beta
+
+SECTION: HEADER
+
+3DO 2.1
+
+SECTION: MODELRESOURCE
+
+MATERIALS 2
+0: 00ftbl2.mat
+1: jedigreedo.mat
+
+SECTION: GEOMETRYDEF
+
+RADIUS .105666
+
+INSERT OFFSET 0 0 0
+
+GEOSETS 1
+
+GEOSET 0
+
+MESHES 1
+
+MESH 0
+NAME Layer0
+RADIUS .105666
+GEOMETRYMODE	4
+LIGHTINGMODE	3
+TEXTUREMODE	1
+
+VERTICES 6
+
+0: -.0975 -.01126 -.020365 0
+1: .0975 -.01126 -.020365 0
+2: -.0975 .01174 -.020365 0
+3: .0975 .01174 -.020365 0
+4: .0975 -.000479 .040729 0
+5: -.0975 -.000479 .040729 0
+
+TEXTURE VERTICES 18
+
+0: -632.64 -62.4
+1: -640 -62.4
+2: -640 0
+3: -632.64 0
+4: 300.45 4.55
+5: 320 8
+6: 320 .64
+7: 0 -640
+8: -19.55 -636.55
+9: 0 -632.64
+10: 1.27 62.4
+11: 21.12 62.4
+12: 21.12 0
+13: 1.27 0
+14: 1.5 -26.94
+15: 63.9 -26.94
+16: 63.9 -7
+17: 1.5 -7
+
+VERTEX NORMALS
+
+0: -.333333 -.328261 -.275405
+1: .333333 -.328261 -.275405
+2: -.333333 .32686 -.267961
+3: .333333 .32686 -.267961
+4: .333333 -.001401 .1233
+5: -.333333 -.001401 .1233
+
+FACES 5
+
+0: 0 0x0 4 3 1 0 4 3, 0 1, 1 0, 2 2, 3
+1: 0 0x0 4 3 1 0 3 4, 4 1, 5 3, 6
+2: 0 0x0 4 3 1 0 3 0, 7 5, 8 2, 9
+3: 0 0x0 4 3 1 0 4 5, 10 0, 11 1, 12 4, 13
+4: 1 0x0 4 3 1 0 4 5, 14 4, 15 3, 16 2, 17
+
+FACE NORMALS
+
+0: 0 0 -1
+1: 1 0 0
+2: -1 0 0
+3: 0 -.984784 .173785
+4: 0 .980581 .196116
+
+SECTION: HIERARCHYDEF
+
+HIERARCHY NODES 1
+# num: flags: type: mesh: parent: child:  sibling:  numChildren: x: y: z: pitch: yaw: roll: pivotx: pivoty: pivotz: hnodename:
+0:     0x0    0x1   0     -1      -1      -1        0            0  0  0  0.0    0.0  0.0   0.0     0.0    0.0     Layer0

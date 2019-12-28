@@ -1,0 +1,78 @@
+# Jedi Knight Cog Script
+#
+#
+# [YB]
+#
+# (C) 1997 LucasArts Entertainment Co. All Rights Reserved
+# Generic Script to set a sector to pulse light
+# Min/Max at pulse messages. Pulse runs continuously
+# Steve C.
+
+flags=0x240
+
+symbols
+
+message  startup
+message  pulse
+
+sector   pulsesector0
+sector   pulsesector1
+sector   pulsesector2
+sector   pulsesector3
+sector   pulsesector4
+sector   pulsesector5
+sector   pulsesector6
+sector   pulsesector7
+
+float    pulseval=1.5       //time to Min or Max liteval
+float    minlite=0          //minimum light value
+float    maxlite=1          //maximum light value
+int      flag=0      local
+int      index=0     local
+int      numsects=0  local
+
+end
+
+## Code Section
+
+code
+
+//-----------------------------------------------------------------------------
+
+startup:
+   if (pulsesector0 >=0) numsects=numsects + 1;
+   if (pulsesector1 >=0) numsects=numsects + 1;
+   if (pulsesector2 >=0) numsects=numsects + 1;
+   if (pulsesector3 >=0) numsects=numsects + 1;
+   if (pulsesector4 >=0) numsects=numsects + 1;
+   if (pulsesector5 >=0) numsects=numsects + 1;
+   if (pulsesector6 >=0) numsects=numsects + 1;
+   if (pulsesector7 >=0) numsects=numsects + 1;
+   SetPulse(pulseval);
+   return;
+
+//-----------------------------------------------------------------------------
+
+pulse:
+   if (flag == 1)
+      {
+      for (index=0; index < numsects; index = index + 1)
+         {
+          SetSectorLight(pulsesector0[index], minlite, pulseval);
+         }
+      flag=0;
+      return;
+      }
+   else if (flag == 0)
+      {
+      for (index=0; index < numsects; index = index + 1)
+         {
+          SetSectorLight(pulsesector0[index], maxlite, pulseval);
+         }
+      flag=1;
+      return;
+      }
+   return;
+end
+
+

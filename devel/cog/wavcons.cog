@@ -1,0 +1,32 @@
+# Jedi Knight COG script
+# wavcon.cog
+#
+# This COG allows you to play a sound when you activate a console.
+#
+# Created by BeefCaike. Modifed by sqmagellan. All Rights Reserved.
+
+symbols
+
+thing		console
+sound		the_sound
+flex		delay=8.0
+int		saidthat		local
+
+message		activated
+
+end
+
+# (/\/\/\/\(()=======================================================-
+
+code
+
+activated:
+   if (saidthat) Return;
+   saidthat = 1;
+   PlaySoundGlobal(the_sound, 1, 0, 0x4);
+   Sleep(delay);
+   saidthat = 0;
+
+	Return;
+
+end

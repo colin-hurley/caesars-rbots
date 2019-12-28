@@ -1,0 +1,20 @@
+# Jedi Knight Cog Script
+#
+#
+# [YB]
+#
+# (C) 1997 LucasArts Entertainment Co. All Rights Reserved
+# script to scroll a ceiling sky
+
+symbols
+        message         startup
+        float           u=10.0
+        float           v=10.0
+end
+
+code
+startup:
+        SlideCeilingSky(u, v);
+        return;
+end
+

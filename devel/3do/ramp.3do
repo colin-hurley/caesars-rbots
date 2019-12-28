@@ -1,0 +1,89 @@
+# MODEL C:\Ftp\JeD\Projects\Caesars Palace\ramp.3do created by JED 0.94 beta
+
+SECTION: HEADER
+
+3DO 2.1
+
+SECTION: MODELRESOURCE
+
+MATERIALS 1
+0: 03c01.mat
+
+SECTION: GEOMETRYDEF
+
+RADIUS .339935
+
+INSERT OFFSET 0 0 0
+
+GEOSETS 1
+
+GEOSET 0
+
+MESHES 1
+
+MESH 0
+NAME Layer0
+RADIUS .339935
+GEOMETRYMODE	4
+LIGHTINGMODE	3
+TEXTUREMODE	1
+
+VERTICES 6
+
+0: .266667 -.2 -.066667 0
+1: .266667 .2 -.066667 0
+2: -.133333 .2 .133333 0
+3: -.133333 -.2 .133333 0
+4: -.133333 .2 -.066667 0
+5: -.133333 -.2 -.066667 0
+
+TEXTURE VERTICES 17
+
+0: 0 -640
+1: -64 -640
+2: -64 -512
+3: 0 -512
+4: 0 -128
+5: -64 0
+6: 0 0
+7: 512 320
+8: 640 320
+9: 640 256
+10: -512 -128
+11: -640 -128
+12: -640 0
+13: -512 0
+14: 0 -143.11
+15: 128 -143.11
+16: 128 0
+
+VERTEX NORMALS
+
+0: .149071 -.333333 -.035191
+1: .149071 .333333 -.035191
+2: -.184262 .333333 .298142
+3: -.184262 -.333333 .298142
+4: -.333333 .333333 -.333333
+5: -.333333 -.333333 -.333333
+
+FACES 5
+
+0: 0 0x0 4 3 1 0 4 5, 0 3, 1 2, 2 4, 3
+1: 0 0x0 4 3 1 0 3 0, 4 3, 5 5, 6
+2: 0 0x0 4 3 1 0 3 1, 7 4, 8 2, 9
+3: 0 0x0 4 3 1 0 4 1, 10 0, 11 5, 12 4, 13
+4: 0 0x0 4 3 1 0 4 0, 14 1, 15 2, 16 3, 6
+
+FACE NORMALS
+
+0: -1 0 0
+1: 0 -1 0
+2: 0 1 0
+3: 0 0 -1
+4: .447214 0 .894427
+
+SECTION: HIERARCHYDEF
+
+HIERARCHY NODES 1
+# num: flags: type: mesh: parent: child:  sibling:  numChildren: x: y: z: pitch: yaw: roll: pivotx: pivoty: pivotz: hnodename:
+0:     0x0    0x1   0     -1      -1      -1        0            0  0  0  0.0    0.0  0.0   0.0     0.0    0.0     Layer0

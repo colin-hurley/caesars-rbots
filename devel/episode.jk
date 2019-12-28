@@ -1,0 +1,11 @@
+"Caesars Palace"
+
+TYPE 2
+
+SEQ 1
+
+# <line> <cd>  <level>  <type>   <file>         <lightpow>  <darkpow>   <gotoA>  <gotoB>
+
+10:	1	1	LEVEL	caesars.jkl	0	0	-1	-1
+
+end

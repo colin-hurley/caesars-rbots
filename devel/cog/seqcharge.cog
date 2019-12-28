@@ -1,0 +1,59 @@
+# Jedi Knight Cog Script
+#
+# 
+
+symbols
+
+thing        console                            desc=console                  
+thing        td1                                nolink,desc=td1               
+thing        td2                                nolink,desc=td2               
+thing        td3                                nolink,desc=td3               
+thing        td4                                nolink,desc=td4               
+
+int          rounds=1                           desc=rounds                   
+
+flex         rate=0.4                           desc=rate                     
+flex         delay=8.0                          desc=delay                    
+
+int          firing=0                           local                         
+int          cur_round=0                        local                         
+int          dummy                              local                         
+
+template     proj_tpl=+seqchrg2            local                         
+
+sound        on_snd=trap.wav              local                         
+
+message      activated                                                        
+
+end                                                                           
+
+# ========================================================================================
+
+code
+
+activated:
+	if(firing == 1) Return;
+     	firing = 1;
+	dummy = playsoundthing(on_snd,console,1.0,-1,3.0,0x0);
+
+	cur_round = 0;
+	while(cur_round < rounds)
+	{
+	 dummy = CreateThing(proj_tpl, td1);
+	 Sleep(rate);
+	 dummy = CreateThing(proj_tpl, td2);
+	 Sleep(rate);
+	 dummy = CreateThing(proj_tpl, td3);
+	 Sleep(rate);
+	 dummy = CreateThing(proj_tpl, td4);
+	 Sleep(rate);
+	 cur_round = cur_round + 1;
+	}
+
+	Sleep(delay);
+		
+	firing = 0;
+	Return;
+
+end
+
