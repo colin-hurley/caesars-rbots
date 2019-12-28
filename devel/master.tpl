@@ -3,7 +3,7 @@
 _actor            none               orient=(0.000000/0.000000/0.000000) type=actor collide=1 move=physics thingflags=0x20000000 mass=150.000000 physflags=0x4a4f maxrotvel=200.000000 maxvel=1.000000 health=40.00 maxhealth=40.00 maxrotthrust=180.00 jumpspeed=1.50 eyeoffset=(0.000000/0.000000/0.037000) minheadpitch=-80.00 maxheadpitch=80.00 lightoffset=(0.000000/0.070000/0.040000) lightintensity=0.80
 # DESC: Player
 # BBOX: -.037301 -.013874 -.118461 .038114 .03984 .064544
-walkplayer        _actor             type=player thingflags=0x20000401 light=0.200000 model3d=ky.3do size=0.065000 movesize=0.065000 puppet=ky.pup soundclass=ky.snd cog=kyle.cog surfdrag=3.000000 airdrag=0.500000 staticdrag=0.300000 health=100.00 maxhealth=100.00 maxthrust=2.00 typeflags=0x1 error=0.50 fov=0.71 chance=1.00
+walkplayer        _actor             type=player thingflags=0x20000401 light=0.200000 model3d=ky.3do size=0.065000 movesize=0.065000 puppet=ky.pup soundclass=ky.snd cog=rbot-player.cog surfdrag=3.000000 airdrag=0.500000 staticdrag=0.300000 health=100.00 maxhealth=100.00 maxthrust=2.00 typeflags=0x1 error=0.50 fov=0.71 chance=1.00
 # DESC: Class Decor
 # BBOX: 0 0 0 0 0 0
 _decor            none               orient=(0.000000/0.000000/0.000000) type=cog collide=1 move=path
@@ -480,7 +480,7 @@ lightsaber        _powerup           thingflags=0x400 model3d=sabp.3do cog=pow_s
 _droppowerup      _powerup           timer=30.000001 height=0.011000 physflags=0x41 typeflags=0x0
 # DESC: BackPack Pickup
 # BBOX: -.021089 -.023005 -.035347 .016307 .023005 .035347
-+backpack         _droppowerup       thingflags=0x400 model3d=bpck.3do cog=pow_backpack.cog height=0.036337 typeflags=0x4
++backpack         _droppowerup       thingflags=0x400 model3d=bpck.3do cog=rbot-backpack.cog height=0.036337 typeflags=0x4
 # DESC: Bryar Pistol Pickup
 # BBOX: -.008248 -.030839 -.011813 .008248 .030839 .011813
 bryarpistol       _powerup           thingflags=0x400 model3d=bryp.3do cog=pow_bryar.cog
@@ -1966,6 +1966,82 @@ baydoor_a         _walkstruct        model3d=bayd_a.3do size=0.951508 movesize=0
 # DESC: Door 15x10 1/2 of BayDoor type door
 # BBOX: -.75 -.499 -.034859 .75 .499 .034859
 baydoor_b         _walkstruct        model3d=bayd_b.3do size=0.951508 movesize=0.951508
+# DESC: Rbots respawn ghost
+# BBOX: 0 0 0 0 0 0
+rbot_respawn      _ghoststructure    size=0 movesize=0 model3d=respawn.3DO
+# DESC: Rbot Saber Hit1
+# BBOX: 0 0 0 0 0 0
++rbotsaberhit1    _explosion         timer=.001 soundclass=exp_saber_saber.snd typeflags=0x0
+# DESC: Rbot Saber Hit2
+# BBOX: 0 0 0 0 0 0
++rbotsaberhit2    _explosion         timer=.001 soundclass=exp_saber_wall.snd typeflags=0x0
+# DESC: Rbot Saber strike
+# BBOX: 0 0 0 0 0 0
++rbotsaber        _weapon            size=.010 movesize=.010 mass=100 explode=+rbotsaberhit2 fleshhit=+rbotsaberhit2 damage=20 damageclass=0x10 typeflags=0x200d range=.13 force=40
+# DESC: Rbot Double Saber strike
+# BBOX: 0 0 0 0 0 0
++rbotsaber2       _weapon            size=.010 movesize=.010 mass=100 explode=+rbotsaberhit2 fleshhit=+rbotsaberhit2 damage=80 damageclass=0x10 typeflags=0x200d range=.13 force=50
+# DESC: 
+# BBOX: 0 0 0 0 0 0
++rbot_twinkles       none               orient=(0.000000/0.000000/0.000000) type=particle typeflags=0x3f material=00teleport.mat range=0.030000 rate=256.000000 maxthrust=80.000000 elementsize=0.002000 count=256
+# DESC: Rbot parent
+# BBOX: 0 0 0 0 0 0
+_rbotactor        _humanactor        size=0.060400 movesize=0.060400 puppet=ky.pup soundclass=ky.snd mass=160.000000 health=100.00 maxhealth=100.00 maxrotthrust=200.00 jumpspeed=1.60 error=0.60 fov=0.50 chance=1.00 aiclass=rbot-0.ai weapon=+elaser typeflags=0x1 thingflags=0x20000400
+# DESC: Rbot Yun
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_yun          _rbotactor         model3d=yun-0.3do soundclass=kyyun.snd
+# DESC: Rbot Sariss
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_sariss       _rbotactor         model3d=sar-0.3do soundclass=kyfemale.snd
+# DESC: Rbot Boba Fett
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_bobafett     _rbotactor         model3d=bob-0.3do soundclass=kybobafett.snd
+# DESC: Rbot Jerec
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_jerec        _rbotactor         model3d=jer-0.3do soundclass=kyJerec.snd
+# DESC: Rbot Commando
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_commando     _rbotactor         model3d=com-0.3do soundclass=kyMP1.snd
+# DESC: Rbot Greedo
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_greedo       _rbotactor         model3d=gre-0.3do soundclass=kygreedo.snd
+# DESC: Rbot Storm Troper
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_trooper      _rbotactor        model3d=stm-0.3do soundclass=kyTrooper.snd
+# DESC: Rbot Tusken
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_tusken       _rbotactor        model3d=tus-0.3do soundclass=kytusken.snd
+# DESC: Rbot Red Kyle
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_kylered      _rbotactor        model3d=red-0.3do soundclass=kyMP4.snd
+# DESC: Rbot Yellow Kyle
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_kylegold     _rbotactor        model3d=yel-0.3do soundclass=kyMP1.snd
+# DESC: Rbot Jan Ors
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_jan          _rbotactor        model3d=jan-0.3do soundclass=kyfemale.snd
+# DESC: Rbot Bossk
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_bossk        _rbotactor        model3d=bsk-0.3do soundclass=kybossk.snd
+# DESC: Rbot Admiral
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_admiral      _rbotactor        model3d=adm-0.3do soundclass=kyMP3.snd
+# DESC: Rbot Cyborg
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_cyborg       _rbotactor        model3d=cyb-0.3do soundclass=kyMP4.snd
+# DESC: Rbot Redeye
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_redeye       _rbotactor        model3d=eye-0.3do soundclass=kyMP1.snd
+# DESC: Rbot Officer
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_officer      _rbotactor        model3d=off-0.3do soundclass=kyMP3.snd
+# DESC: Rbot Rahn
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_rahn         _rbotactor        model3d=rhn-0.3do soundclass=kyJerec.snd
+# DESC: Rbot Silver
+# BBOX: -.031992 -.017003 -.134424 .032032 .024487 .073659
+rbot_silver       _rbotactor        model3d=sil-0.3do soundclass=kyMP1.snd
+
 # DESC: 
 # BBOX: 0 0 0 0 0 0
 bar               rock2              size=.7594 movesize=.7594 model3d=bar.3do
