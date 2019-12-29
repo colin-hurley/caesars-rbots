@@ -56070,7 +56070,7 @@ World soundclasses 40
 end
 
 Section: cogscripts
-World scripts 69
+World scripts 71
 0: 00_BREAKINGGLASS.COG
 1: 00_CONVEYOR.COG
 2: 00_desttrail.cog
@@ -56127,24 +56127,26 @@ World scripts 69
 53: RAILDET.COG
 54: rbot-backpack.cog
 55: rbot-nav.cog
-56: rbot-player.cog
-57: rbot-skin.cog
-58: rbot-srv.cog
-59: rbot-srv2.cog
-60: rbot-srv-force.cog
-61: rbot-startup.cog
-62: REDCAMERA.COG
-63: SCREAM.COG
-64: SEQCHARGE.COG
-65: TEXTVOICE.COG
-66: TOUCMELV.COG
-67: TURRET.COG
-68: WAVCONS.COG
+56: rbot-nav-special.cog
+57: rbot-path.cog
+58: rbot-player.cog
+59: rbot-skin.cog
+60: rbot-srv.cog
+61: rbot-srv2.cog
+62: rbot-srv-force.cog
+63: rbot-startup.cog
+64: REDCAMERA.COG
+65: SCREAM.COG
+66: SEQCHARGE.COG
+67: TEXTVOICE.COG
+68: TOUCMELV.COG
+69: TURRET.COG
+70: WAVCONS.COG
 end
 
 Section: cogs
 
-World cogs 379
+World cogs 383
 #Num	Script          Symbol values
 0: CAESARS_START.COG
 1: 00_GENERATOR2.COG 626 306 WOMAN1
@@ -56456,6 +56458,8 @@ World cogs 379
 307: rbot-skin.cog 101 rbot_kylered red-0.3do red-1.3do red-2.3do red-3.3do red-4.3do red-5.3do red-6.3do red-7.3do red-8.3do red-9.3do red-10.3do
 308: rbot-skin.cog 102 rbot_kylegold yel-0.3do yel-1.3do yel-2.3do yel-3.3do yel-4.3do yel-5.3do yel-6.3do yel-7.3do yel-8.3do yel-9.3do yel-10.3do
 309: rbot-nav.cog 0.15
+310: rbot-path.cog 0 459 460 461 462 463 464 465 466 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
+311: rbot-nav-special.cog 461 462 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 end
 
 Section: TEMPLATES
@@ -57179,6 +57183,14 @@ World things 640
 456: palmtree palmtree -6.6 .95 .25 0 180 0 130
 457: palmtree palmtree -6.45 1.1 .25 0 270 0 130
 458: cactus cactus -6.6 1.1 .31 0 270 0 130
+459: ghost ghost 20.2165 -.6665 10.945 0 90 0 26
+460: ghost ghost 19.9165 .6335 10.945 0 90 0 26
+461: ghost ghost 20.0415 -.654 10.945 0 90 0 26 size=0.1
+462: ghost ghost 19.854 -.654 10.945 0 90 0 26 size=0.1 thingflags=0x2000000
+463: ghost ghost 19.854 -.654 5.145 0 90 0 552 size=0.1
+464: ghost ghost 19.504 -.654 5.145 0 90 0 549
+465: ghost ghost 19.2165 -.654 4.87 0 90 0 638
+466: ghost ghost 16.4915 -.654 4.945 0 90 0 638 thingflags=0x2000000
 end
 
 Section: Lights
