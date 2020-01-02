@@ -27732,10 +27732,10 @@ WAVCONS.COG console:thing=453 the_sound:sound=POKER.WAV delay:flex=1
 00_CONVEYOR.COG vec0:vector=(1/0/0) speed:flex=1 convey0:surface=2783 convey1:surface=-1 convey2:surface=-1 convey3:surface=-1 convey4:surface=-1 convey5:surface=-1 convey6:surface=-1 convey7:surface=-1
 00_CONVEYOR.COG vec0:vector=(1/0/0) speed:flex=1 convey0:surface=2399 convey1:surface=-1 convey2:surface=-1 convey3:surface=-1 convey4:surface=-1 convey5:surface=-1 convey6:surface=-1 convey7:surface=-1
 00_CONVEYOR.COG vec0:vector=(0/1/0) speed:flex=1 convey0:surface=2901 convey1:surface=-1 convey2:surface=-1 convey3:surface=-1 convey4:surface=-1 convey5:surface=-1 convey6:surface=-1 convey7:surface=-1
-HEMLOS_DOOR.COG door:thing=16 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
-HEMLOS_DOOR.COG door:thing=17 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
-HEMLOS_DOOR.COG door:thing=231 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
-HEMLOS_DOOR.COG door:thing=232 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
+rbot-door.cog door:thing=16 moveSpeed:flex=4 sleepTime:flex=2
+rbot-door.cog door:thing=17 moveSpeed:flex=4 sleepTime:flex=2
+rbot-door.cog door:thing=231 moveSpeed:flex=4 sleepTime:flex=2
+rbot-door.cog door:thing=232 moveSpeed:flex=4 sleepTime:flex=2
 WAVCONS.COG console:thing=239 the_sound:sound=POKER.WAV delay:flex=1
 WAVCONS.COG console:thing=238 the_sound:sound=SLOT.WAV delay:flex=1
 WAVCONS.COG console:thing=241 the_sound:sound=SLOT.WAV delay:flex=1
@@ -27746,18 +27746,18 @@ BCS.COG glass:surface=3669 glass2:surface=3671 spawnpoints:int=2 density:int=5
 BCS.COG glass:surface=3780 glass2:surface=3803 spawnpoints:int=2 density:int=5
 00_BREAKINGGLASS.COG glass:surface=3780 glass2:surface=3803 spawnpoints:int=2 density:int=5
 00_BREAKINGGLASS.COG glass:surface=-1 glass2:surface=3801 spawnpoints:int=2 density:int=5
-HEMLOS_DOOR.COG door:thing=246 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
+rbot-door.cog door:thing=246 moveSpeed:flex=4 sleepTime:flex=2
 00_BREAKINGGLASS.COG glass:surface=4237 glass2:surface=4196 spawnpoints:int=2 density:int=5
 00_BREAKINGGLASS.COG glass:surface=6371 glass2:surface=4085 spawnpoints:int=2 density:int=5
 00_BREAKINGGLASS.COG glass:surface=3982 glass2:surface=3980 spawnpoints:int=2 density:int=5
 BCS.COG glass:surface=4237 glass2:surface=4196 spawnpoints:int=2 density:int=5
 BCS.COG glass:surface=6371 glass2:surface=4085 spawnpoints:int=2 density:int=5
 BCS.COG glass:surface=3982 glass2:surface=3980 spawnpoints:int=2 density:int=5
-HEMLOS_DOOR.COG door:thing=247 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
-HEMLOS_DOOR.COG door:thing=248 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
-HEMLOS_DOOR.COG door:thing=249 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
-HEMLOS_DOOR.COG door:thing=250 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
-HEMLOS_DOOR.COG door:thing=251 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
+rbot-door.cog door:thing=247 moveSpeed:flex=4 sleepTime:flex=2
+rbot-door.cog door:thing=248 moveSpeed:flex=4 sleepTime:flex=2
+rbot-door.cog door:thing=249 moveSpeed:flex=4 sleepTime:flex=2
+rbot-door.cog door:thing=250 moveSpeed:flex=4 sleepTime:flex=2
+rbot-door.cog door:thing=251 moveSpeed:flex=4 sleepTime:flex=2
 LIGHTSWITCH.COG poweroff:sound=ACTIVATE04.WAV poweron:sound=ACTIVATE01.WAV switch:surface=4340 onlight:flex=0.15 offlight:flex=1 sector00:sector=353 sector01:sector=356 sector02:sector=354 sector03:sector=355 sector04:sector=356 sector05:sector=357 sector06:sector=358 sector07:sector=359 sector08:sector=361 sector09:sector=362 sector10:sector=360 sector11:sector=363 sector12:sector=364 sector13:sector=534 sector14:sector=-1
 LIGHTSWITCH.COG poweroff:sound=ACTIVATE04.WAV poweron:sound=ACTIVATE01.WAV switch:surface=4352 onlight:flex=0.15 offlight:flex=1 sector00:sector=383 sector01:sector=387 sector02:sector=388 sector03:sector=386 sector04:sector=385 sector05:sector=393 sector06:sector=390 sector07:sector=389 sector08:sector=395 sector09:sector=394 sector10:sector=391 sector11:sector=392 sector12:sector=531 sector13:sector=-1 sector14:sector=-1
 LIGHTSWITCH.COG poweroff:sound=ACTIVATE04.WAV poweron:sound=ACTIVATE01.WAV switch:surface=4346 onlight:flex=0.15 offlight:flex=1 sector00:sector=365 sector01:sector=366 sector02:sector=367 sector03:sector=368 sector04:sector=369 sector05:sector=370 sector06:sector=374 sector07:sector=373 sector08:sector=371 sector09:sector=375 sector10:sector=372 sector11:sector=376 sector12:sector=530 sector13:sector=-1 sector14:sector=-1
@@ -27770,9 +27770,9 @@ WAVCONS.COG console:thing=264 the_sound:sound=TOILET.WAV delay:flex=1
 WAVCONS.COG console:thing=268 the_sound:sound=TOILET.WAV delay:flex=1
 00_BREAKINGGLASS.COG glass:surface=4414 glass2:surface=4413 spawnpoints:int=2 density:int=5
 BCS.COG glass:surface=4414 glass2:surface=4413 spawnpoints:int=2 density:int=5
-HEMLOS_DOOR.COG door:thing=279 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
+rbot-door.cog door:thing=279 moveSpeed:flex=4 sleepTime:flex=2
 00_MATANIM.COG animmat:material=18TGRAV.MAT fps:flex=3
-HEMLOS_DOOR.COG door:thing=280 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
+rbot-door.cog door:thing=280 moveSpeed:flex=4 sleepTime:flex=2
 00_MATANIM.COG animmat:material=DISCOFLOOR3.MAT fps:flex=3
 SCREAM.COG soundPos0:thing=281 soundPos1:thing=-1 soundPos2:thing=-1 soundPos3:thing=-1 soundPos4:thing=-1 soundPos5:thing=-1 soundPos6:thing=-1 soundPos7:thing=-1 wav0:sound=TRANCE.WAV minDist:flex=-1 maxDist:flex=55 volume:flex=5
 00_SECTORLITEANIMFLICKER2.COG pulsesector0:sector=504 pulsesector1:sector=503 pulsesector2:sector=508 pulsesector3:sector=469 pulsesector4:sector=-1 pulsesector5:sector=-1 pulsesector6:sector=-1 pulsesector7:sector=-1 pulseval:flex=0.9 minlite:flex=0 maxlite:flex=1
@@ -27780,8 +27780,8 @@ SCREAM.COG soundPos0:thing=281 soundPos1:thing=-1 soundPos2:thing=-1 soundPos3:t
 00_GENERATOR2.COG trigger:sector=504 generator_pos:thing=287 enemy_tpl:template=NBARTENDER
 00_SECTORLITEANIMFLICKER2.COG pulsesector0:sector=518 pulsesector1:sector=468 pulsesector2:sector=513 pulsesector3:sector=506 pulsesector4:sector=507 pulsesector5:sector=510 pulsesector6:sector=-1 pulsesector7:sector=-1 pulseval:flex=0.9 minlite:flex=0 maxlite:flex=1
 00_MATANIM.COG animmat:material=CAMERALITE.MAT fps:flex=3
-HEMLOS_DOOR.COG door:thing=296 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
-HEMLOS_DOOR.COG door:thing=297 start_wait:flex=0.25 sleeptime:flex=2 speed:flex=4
+rbot-door.cog door:thing=296 moveSpeed:flex=4 sleepTime:flex=2
+rbot-door.cog door:thing=297 moveSpeed:flex=4 sleepTime:flex=2
 00_MATANIM.COG animmat:material=00TWATER2.MAT fps:flex=4
 TURRET.COG turret:thing=324 rounds:int=5 rate:flex=0.1 delay:flex=0.1 movespeed:flex=2 autoAimZFOV:flex=90 autoAimXFOV:flex=180
 TURRET.COG turret:thing=325 rounds:int=5 rate:flex=0.1 delay:flex=0.1 movespeed:flex=2 autoAimZFOV:flex=90 autoAimXFOV:flex=180

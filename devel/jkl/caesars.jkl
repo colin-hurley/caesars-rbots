@@ -56092,41 +56092,41 @@ World scripts 73
 18: ctf_keyred.cog
 19: DESTRUCT.COG
 20: GRENADE.COG
-21: HEMLOS_DOOR.COG
-22: LEVELSTART.COG
-23: LIGHTSWITCH.COG
-24: M2_FFIELDSWITCH.COG
-25: MDM04_SLASHGRATE.COG
-26: pow_bacta.cog
-27: pow_battery.cog
-28: pow_bryar.cog
-29: pow_concrifle.cog
-30: pow_crossbow.cog
-31: pow_darkside.cog
-32: pow_energy.cog
-33: pow_goggles.cog
-34: pow_health.cog
-35: pow_lightside.cog
-36: pow_mana.cog
-37: pow_power.cog
-38: pow_powerboost.cog
-39: pow_railcharges.cog
-40: pow_railgun.cog
-41: pow_repeater.cog
-42: pow_revive.cog
-43: pow_sequencer.cog
-44: pow_shields.cog
-45: pow_single_sequencer.cog
-46: pow_single_thermal.cog
-47: pow_smbkpk.cog
-48: pow_stbkpk.cog
-49: pow_strifle.cog
-50: pow_supershield.cog
-51: pow_thermal.cog
-52: pow_vest.cog
-53: RAILDET.COG
-54: rbot-arrival.cog
-55: rbot-backpack.cog
+21: LEVELSTART.COG
+22: LIGHTSWITCH.COG
+23: M2_FFIELDSWITCH.COG
+24: MDM04_SLASHGRATE.COG
+25: pow_bacta.cog
+26: pow_battery.cog
+27: pow_bryar.cog
+28: pow_concrifle.cog
+29: pow_crossbow.cog
+30: pow_darkside.cog
+31: pow_energy.cog
+32: pow_goggles.cog
+33: pow_health.cog
+34: pow_lightside.cog
+35: pow_mana.cog
+36: pow_power.cog
+37: pow_powerboost.cog
+38: pow_railcharges.cog
+39: pow_railgun.cog
+40: pow_repeater.cog
+41: pow_revive.cog
+42: pow_sequencer.cog
+43: pow_shields.cog
+44: pow_single_sequencer.cog
+45: pow_single_thermal.cog
+46: pow_smbkpk.cog
+47: pow_stbkpk.cog
+48: pow_strifle.cog
+49: pow_supershield.cog
+50: pow_thermal.cog
+51: pow_vest.cog
+52: RAILDET.COG
+53: rbot-arrival.cog
+54: rbot-backpack.cog
+55: rbot-door.cog
 56: rbot-elev.cog
 57: rbot-nav.cog
 58: rbot-nav-special.cog
@@ -56298,10 +56298,10 @@ World cogs 387
 145: 00_CONVEYOR.COG (1/0/0) 1 2783 -1 -1 -1 -1 -1 -1 -1
 146: 00_CONVEYOR.COG (1/0/0) 1 2399 -1 -1 -1 -1 -1 -1 -1
 147: 00_CONVEYOR.COG (0/1/0) 1 2901 -1 -1 -1 -1 -1 -1 -1
-148: HEMLOS_DOOR.COG 16 0.25 2 4
-149: HEMLOS_DOOR.COG 17 0.25 2 4
-150: HEMLOS_DOOR.COG 231 0.25 2 4
-151: HEMLOS_DOOR.COG 232 0.25 2 4
+148: rbot-door.cog 16 4 2
+149: rbot-door.cog 17 4 2
+150: rbot-door.cog 231 4 2
+151: rbot-door.cog 232 4 2
 152: WAVCONS.COG 239 POKER.WAV 1
 153: WAVCONS.COG 238 SLOT.WAV 1
 154: WAVCONS.COG 241 SLOT.WAV 1
@@ -56312,18 +56312,18 @@ World cogs 387
 159: BCS.COG 3780 3803 2 5
 160: 00_BREAKINGGLASS.COG 3780 3803 2 5
 161: 00_BREAKINGGLASS.COG -1 3801 2 5
-162: HEMLOS_DOOR.COG 246 0.25 2 4
+162: rbot-door.cog 246 4 2
 163: 00_BREAKINGGLASS.COG 4237 4196 2 5
 164: 00_BREAKINGGLASS.COG 6371 4085 2 5
 165: 00_BREAKINGGLASS.COG 3982 3980 2 5
 166: BCS.COG 4237 4196 2 5
 167: BCS.COG 6371 4085 2 5
 168: BCS.COG 3982 3980 2 5
-169: HEMLOS_DOOR.COG 247 0.25 2 4
-170: HEMLOS_DOOR.COG 248 0.25 2 4
-171: HEMLOS_DOOR.COG 249 0.25 2 4
-172: HEMLOS_DOOR.COG 250 0.25 2 4
-173: HEMLOS_DOOR.COG 251 0.25 2 4
+169: rbot-door.cog 247 4 2
+170: rbot-door.cog 248 4 2
+171: rbot-door.cog 249 4 2
+172: rbot-door.cog 250 4 2
+173: rbot-door.cog 251 4 2
 174: LIGHTSWITCH.COG ACTIVATE04.WAV ACTIVATE01.WAV 4340 0.15 1 353 356 354 355 356 357 358 359 361 362 360 363 364 534 -1
 175: LIGHTSWITCH.COG ACTIVATE04.WAV ACTIVATE01.WAV 4352 0.15 1 383 387 388 386 385 393 390 389 395 394 391 392 531 -1 -1
 176: LIGHTSWITCH.COG ACTIVATE04.WAV ACTIVATE01.WAV 4346 0.15 1 365 366 367 368 369 370 374 373 371 375 372 376 530 -1 -1
@@ -56336,9 +56336,9 @@ World cogs 387
 183: WAVCONS.COG 268 TOILET.WAV 1
 184: 00_BREAKINGGLASS.COG 4414 4413 2 5
 185: BCS.COG 4414 4413 2 5
-186: HEMLOS_DOOR.COG 279 0.25 2 4
+186: rbot-door.cog 279 4 2
 187: 00_MATANIM.COG 18TGRAV.MAT 3
-188: HEMLOS_DOOR.COG 280 0.25 2 4
+188: rbot-door.cog 280 4 2
 189: 00_MATANIM.COG DISCOFLOOR3.MAT 3
 190: SCREAM.COG 281 -1 -1 -1 -1 -1 -1 -1 TRANCE.WAV -1 55 5
 191: 00_SECTORLITEANIMFLICKER2.COG 504 503 508 469 -1 -1 -1 -1 0.9 0 1
@@ -56346,8 +56346,8 @@ World cogs 387
 193: 00_GENERATOR2.COG 504 287 NBARTENDER
 194: 00_SECTORLITEANIMFLICKER2.COG 518 468 513 506 507 510 -1 -1 0.9 0 1
 195: 00_MATANIM.COG CAMERALITE.MAT 3
-196: HEMLOS_DOOR.COG 296 0.25 2 4
-197: HEMLOS_DOOR.COG 297 0.25 2 4
+196: rbot-door.cog 296 4 2
+197: rbot-door.cog 297 4 2
 198: 00_MATANIM.COG 00TWATER2.MAT 4
 199: TURRET.COG 324 5 0.1 0.1 2 90 180
 200: TURRET.COG 325 5 0.1 0.1 2 90 180
