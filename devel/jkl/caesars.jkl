@@ -56070,7 +56070,7 @@ World soundclasses 40
 end
 
 Section: cogscripts
-World scripts 71
+World scripts 72
 0: 00_BREAKINGGLASS.COG
 1: 00_CONVEYOR.COG
 2: 00_desttrail.cog
@@ -56131,22 +56131,23 @@ World scripts 71
 57: rbot-path.cog
 58: rbot-player.cog
 59: rbot-skin.cog
-60: rbot-srv.cog
-61: rbot-srv2.cog
-62: rbot-srv-force.cog
-63: rbot-startup.cog
-64: REDCAMERA.COG
-65: SCREAM.COG
-66: SEQCHARGE.COG
-67: TEXTVOICE.COG
-68: TOUCMELV.COG
-69: TURRET.COG
-70: WAVCONS.COG
+60: rbot-special.cog
+61: rbot-srv.cog
+62: rbot-srv2.cog
+63: rbot-srv-force.cog
+64: rbot-startup.cog
+65: REDCAMERA.COG
+66: SCREAM.COG
+67: SEQCHARGE.COG
+68: TEXTVOICE.COG
+69: TOUCMELV.COG
+70: TURRET.COG
+71: WAVCONS.COG
 end
 
 Section: cogs
 
-World cogs 383
+World cogs 385
 #Num	Script          Symbol values
 0: CAESARS_START.COG
 1: 00_GENERATOR2.COG 626 306 WOMAN1
@@ -56458,8 +56459,9 @@ World cogs 383
 307: rbot-skin.cog 101 rbot_kylered red-0.3do red-1.3do red-2.3do red-3.3do red-4.3do red-5.3do red-6.3do red-7.3do red-8.3do red-9.3do red-10.3do
 308: rbot-skin.cog 102 rbot_kylegold yel-0.3do yel-1.3do yel-2.3do yel-3.3do yel-4.3do yel-5.3do yel-6.3do yel-7.3do yel-8.3do yel-9.3do yel-10.3do
 309: rbot-nav.cog 0.15
-310: rbot-path.cog 0 459 460 461 462 463 464 465 466 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
+310: rbot-path.cog 0 459 460 461 462 463 464 465 466 467 468 469 470 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
 311: rbot-nav-special.cog 461 462 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+312: rbot-special.cog 460 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 end
 
 Section: TEMPLATES
@@ -57191,6 +57193,10 @@ World things 640
 464: ghost ghost 19.504 -.654 5.145 0 90 0 549
 465: ghost ghost 19.2165 -.654 4.87 0 90 0 638
 466: ghost ghost 16.4915 -.654 4.945 0 90 0 638 thingflags=0x2000000
+467: ghost ghost 14.979 -.654 2.8075 0 90 0 14
+468: ghost ghost 11.504 -.654 2.9075 0 90 0 17 thingflags=0x2000000
+469: ghost ghost 10.0165 -.654 .3575 0 90 0 613
+470: ghost ghost 6.7415 -.654 .3575 0 90 0 653
 end
 
 Section: Lights
