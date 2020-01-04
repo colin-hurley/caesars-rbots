@@ -26540,7 +26540,7 @@ RAIL.MAT 80000004 4 4 3 1 0 4 -1 -1 7 1 1
 END
 
 SEC: THINGS
-THS 596 640
+THS 607 640
 C3_FAN -.12 -.81 1.36 0 270 0 626 0
 
 DESKCOMP -1.95 -1.065 .32 0 90 0 626 0
@@ -27733,6 +27733,28 @@ ghost 27.154 -3.3665 12.045 0 90 0 167 1
 
 ghost 27.154 -4.554 12.045 0 90 0 165 1
 
+ghost 6.2165 3.071 .3575 0 90 0 654 1
+ size=0.4
+ghost 6.2165 7.121 .3575 0 90 0 452 1
+ size=0.1
+ghost 7.2915 8.071 .3575 0 90 0 452 1
+ size=0.1
+ghost 7.2915 10.6085 .3575 0 90 0 465 1
+ size=0.1
+ghost 7.2915 13.046 .3575 0 90 0 465 1
+ size=0.1
+ghost 3.2915 13.046 .3575 0 90 0 455 1
+ size=0.1
+ghost 3.2915 16.521 .3575 0 90 0 456 1
+ size=0.1
+ghost 3.2915 20.046 .3575 0 90 0 456 1
+ size=0.1
+ghost 6.804 20.046 .3575 0 90 0 458 1
+ size=0.1
+ghost 10.2915 20.046 .3575 0 90 0 458 1
+ size=0.1
+ghost 10.2915 17.046 .3575 0 90 0 457 1
+ size=0.1
 END
 
 SEC: LIGHTS
@@ -27833,7 +27855,7 @@ LTS 93
 END
 
 SEC: COGS
-COGS 331
+COGS 332
 CAESARS_START.COG
 00_GENERATOR2.COG trigger:sector=626 generator_pos:thing=306 enemy_tpl:template=WOMAN1
 00_MATANIM.COG animmat:material=00ACP1.MAT fps:flex=3
@@ -28165,6 +28187,7 @@ rbot-path.cog pathid:int=13 node0:thing=473 node1:thing=586 node2:thing=587 node
 rbot-special.cog sp0:thing=586 sp1:thing=587 sp2:thing=-1 sp3:thing=-1 sp4:thing=-1 sp5:thing=-1 sp6:thing=-1 sp7:thing=-1 sp8:thing=-1 sp9:thing=-1 sp10:thing=-1 sp11:thing=-1 sp12:thing=-1 sp13:thing=-1 sp14:thing=-1 sp15:thing=-1 sp16:thing=-1 sp17:thing=-1 sp18:thing=-1 sp19:thing=-1 spinf0:int=4 spinf1:int=32 spinf2:int=0 spinf3:int=0 spinf4:int=0 spinf5:int=0 spinf6:int=0 spinf7:int=0 spinf8:int=0 spinf9:int=0 spinf10:int=0 spinf11:int=0 spinf12:int=0 spinf13:int=0 spinf14:int=0 spinf15:int=0 spinf16:int=0 spinf17:int=0 spinf18:int=0 spinf19:int=0
 rbot-special-wallcel.cog sp0:thing=589 sp1:thing=590 sp2:thing=-1 sp3:thing=-1 sp4:thing=-1 sp5:thing=-1 sp6:thing=-1 sp7:thing=-1 sp8:thing=-1 sp9:thing=-1 wall0:surface=1830 wall1:surface=1836 wall2:surface=-1 wall3:surface=-1 wall4:surface=-1 wall5:surface=-1 wall6:surface=-1 wall7:surface=-1 wall8:surface=-1 wall9:surface=-1 wallcel0:int=0 wallcel1:int=0 wallcel2:int=0 wallcel3:int=0 wallcel4:int=0 wallcel5:int=0 wallcel6:int=0 wallcel7:int=0 wallcel8:int=0 wallcel9:int=0 spinf0:int=32 spinf1:int=64 spinf2:int=0 spinf3:int=0 spinf4:int=0 spinf5:int=0 spinf6:int=0 spinf7:int=0 spinf8:int=0 spinf9:int=0
 rbot-path.cog pathid:int=14 node0:thing=459 node1:thing=588 node2:thing=589 node3:thing=590 node4:thing=591 node5:thing=592 node6:thing=593 node7:thing=594 node8:thing=595 node9:thing=-1 node10:thing=-1 node11:thing=-1 node12:thing=-1 node13:thing=-1 node14:thing=-1 node15:thing=-1 node16:thing=-1 node17:thing=-1 node18:thing=-1 node19:thing=-1 node20:thing=-1 node21:thing=-1 node22:thing=-1 node23:thing=-1 node24:thing=-1 unidirectional:int=0 nonlooping:int=0 requirements:int=0
+rbot-path.cog pathid:int=15 node0:thing=470 node1:thing=596 node2:thing=597 node3:thing=598 node4:thing=599 node5:thing=600 node6:thing=601 node7:thing=602 node8:thing=603 node9:thing=604 node10:thing=605 node11:thing=606 node12:thing=-1 node13:thing=-1 node14:thing=-1 node15:thing=-1 node16:thing=-1 node17:thing=-1 node18:thing=-1 node19:thing=-1 node20:thing=-1 node21:thing=-1 node22:thing=-1 node23:thing=-1 node24:thing=-1 unidirectional:int=0 nonlooping:int=0 requirements:int=0
 END
 
 SEC: LAYERS

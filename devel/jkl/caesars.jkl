@@ -56150,7 +56150,7 @@ end
 
 Section: cogs
 
-World cogs 406
+World cogs 407
 #Num	Script          Symbol values
 0: CAESARS_START.COG
 1: 00_GENERATOR2.COG 626 306 WOMAN1
@@ -56483,6 +56483,7 @@ World cogs 406
 328: rbot-special.cog 586 587 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 4 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 329: rbot-special-wallcel.cog 589 590 -1 -1 -1 -1 -1 -1 -1 -1 1830 1836 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 32 64 0 0 0 0 0 0 0 0
 330: rbot-path.cog 14 459 588 589 590 591 592 593 594 595 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
+331: rbot-path.cog 15 470 596 597 598 599 600 601 602 603 604 605 606 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
 end
 
 Section: TEMPLATES
@@ -57343,6 +57344,17 @@ World things 640
 593: ghost ghost 25.554 -3.3665 12.045 0 90 0 167
 594: ghost ghost 27.154 -3.3665 12.045 0 90 0 167
 595: ghost ghost 27.154 -4.554 12.045 0 90 0 165
+596: ghost ghost 6.2165 3.071 .3575 0 90 0 654 size=0.4
+597: ghost ghost 6.2165 7.121 .3575 0 90 0 452 size=0.1
+598: ghost ghost 7.2915 8.071 .3575 0 90 0 452 size=0.1
+599: ghost ghost 7.2915 10.6085 .3575 0 90 0 465 size=0.1
+600: ghost ghost 7.2915 13.046 .3575 0 90 0 465 size=0.1
+601: ghost ghost 3.2915 13.046 .3575 0 90 0 455 size=0.1
+602: ghost ghost 3.2915 16.521 .3575 0 90 0 456 size=0.1
+603: ghost ghost 3.2915 20.046 .3575 0 90 0 456 size=0.1
+604: ghost ghost 6.804 20.046 .3575 0 90 0 458 size=0.1
+605: ghost ghost 10.2915 20.046 .3575 0 90 0 458 size=0.1
+606: ghost ghost 10.2915 17.046 .3575 0 90 0 457 size=0.1
 end
 
 Section: Lights
