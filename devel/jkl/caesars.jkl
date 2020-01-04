@@ -56070,7 +56070,7 @@ World soundclasses 40
 end
 
 Section: cogscripts
-World scripts 73
+World scripts 75
 0: 00_BREAKINGGLASS.COG
 1: 00_CONVEYOR.COG
 2: 00_desttrail.cog
@@ -56133,22 +56133,24 @@ World scripts 73
 59: rbot-path.cog
 60: rbot-player.cog
 61: rbot-skin.cog
-62: rbot-special-sector.cog
-63: rbot-srv.cog
-64: rbot-srv2.cog
-65: rbot-srv-force.cog
-66: rbot-startup.cog
-67: REDCAMERA.COG
-68: SCREAM.COG
-69: SEQCHARGE.COG
-70: TEXTVOICE.COG
-71: TURRET.COG
-72: WAVCONS.COG
+62: rbot-special.cog
+63: rbot-special-sector.cog
+64: rbot-special-wallcel.cog
+65: rbot-srv.cog
+66: rbot-srv2.cog
+67: rbot-srv-force.cog
+68: rbot-startup.cog
+69: REDCAMERA.COG
+70: SCREAM.COG
+71: SEQCHARGE.COG
+72: TEXTVOICE.COG
+73: TURRET.COG
+74: WAVCONS.COG
 end
 
 Section: cogs
 
-World cogs 400
+World cogs 406
 #Num	Script          Symbol values
 0: CAESARS_START.COG
 1: 00_GENERATOR2.COG 626 306 WOMAN1
@@ -56461,9 +56463,9 @@ World cogs 400
 308: rbot-skin.cog 102 rbot_kylegold yel-0.3do yel-1.3do yel-2.3do yel-3.3do yel-4.3do yel-5.3do yel-6.3do yel-7.3do yel-8.3do yel-9.3do yel-10.3do
 309: rbot-nav.cog 0.15
 310: rbot-path.cog 0 535 465 466 467 468 494 469 470 471 472 473 474 475 476 477 478 479 480 481 -1 -1 -1 -1 -1 -1 0 0 0
-311: rbot-nav-special.cog 461 462 526 536 543 552 562 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+311: rbot-nav-special.cog 461 462 526 536 543 552 562 591 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0
 312: rbot-arrival.cog 460 464 524 527 534 538 541 544 550 553 1 0 1 0 1 0 1 0 1 0 25 25 37 37 43 43 142 142 135 135 1 0 1 0 0 1 0 1 0 1 10 10 10 10 10 10 10 10 10 10 32 64 32 64 32 64 32 64 32 64
-313: rbot-special-sector.cog 26 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+313: rbot-special-sector.cog 26 165 164 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1024 1024 1024 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 314: rbot-path.cog 1 482 483 484 485 486 487 488 489 490 491 492 493 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
 315: rbot-path.cog 2 490 495 496 497 498 499 520 500 501 502 503 504 505 506 507 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
 316: rbot-path.cog 3 507 508 509 510 511 519 512 513 514 515 516 517 518 521 485 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
@@ -56474,9 +56476,13 @@ World cogs 400
 321: rbot-path.cog 8 499 550 551 552 553 554 555 556 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
 322: rbot-path.cog 9 475 557 558 559 560 561 562 563 564 565 566 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
 323: rbot-path.cog 10 569 568 567 566 570 571 572 573 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
-324: rbot-arrival.cog 561 565 -1 -1 -1 -1 -1 -1 -1 -1 1 0 -1 -1 -1 -1 -1 -1 -1 -1 355 355 -1 -1 -1 -1 -1 -1 -1 -1 0 1 -1 -1 -1 -1 -1 -1 -1 -1 20 20 30 30 30 30 30 30 30 30 32 64 0 0 0 0 0 0 0 0
+324: rbot-arrival.cog 561 565 590 593 -1 -1 -1 -1 -1 -1 1 0 1 0 -1 -1 -1 -1 -1 -1 355 355 196 196 -1 -1 -1 -1 -1 -1 0 1 0 1 -1 -1 -1 -1 -1 -1 20 20 10 10 30 30 30 30 30 30 32 64 32 64 0 0 0 0 0 0
 325: rbot-path.cog 11 470 574 575 576 577 578 579 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
 326: rbot-path.cog 12 558 580 581 582 583 584 585 579 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 1 0 0
+327: rbot-path.cog 13 473 586 587 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
+328: rbot-special.cog 586 587 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 4 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+329: rbot-special-wallcel.cog 589 590 -1 -1 -1 -1 -1 -1 -1 -1 1830 1836 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 32 64 0 0 0 0 0 0 0 0
+330: rbot-path.cog 14 459 588 589 590 591 592 593 594 595 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
 end
 
 Section: TEMPLATES
@@ -57327,6 +57333,16 @@ World things 640
 583: ghost ghost -.5835 -7.754 -.155 0 90 0 47
 584: ghost ghost 1.0165 -7.754 -.155 0 90 0 517
 585: ghost ghost 5.754 -8.1915 .8325 0 90 0 515 thingflags=0x2000000
+586: ghost ghost -.046 1.9335 .3575 0 90 0 626
+587: ghost ghost -.046 2.3085 .4575 0 90 0 545
+588: ghost ghost 21.9915 -1.9415 10.945 0 90 0 26 size=0.1
+589: ghost ghost 21.9915 -4.5415 10.945 0 90 0 548 size=0.1
+590: ghost ghost 25.354 -4.5415 10.945 0 90 0 164 size=0.1
+591: ghost ghost 25.354 -3.854 10.945 0 90 0 164 size=0.1
+592: ghost ghost 25.4415 -3.829 12.045 0 90 0 165 size=0.1 thingflags=0x2000000
+593: ghost ghost 25.554 -3.3665 12.045 0 90 0 167
+594: ghost ghost 27.154 -3.3665 12.045 0 90 0 167
+595: ghost ghost 27.154 -4.554 12.045 0 90 0 165
 end
 
 Section: Lights

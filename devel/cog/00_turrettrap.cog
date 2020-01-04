@@ -11,10 +11,13 @@
 # [YB]
 #
 # (C) 1997 LucasArts Entertainment Co. All Rights Reserved              
+#
+# Modified to support Rbots
 # ========================================================================================
 
 symbols
 
+message trigger
 message activate
 
 surface switch                                  desc=switch
@@ -45,11 +48,26 @@ sound           fireSound=turret-1.wav  local
 sound           on_snd=set_hi2.wav              local
 sound           off_snd=lgclick1.wav            local
 
+thing           rbot                            local
+flex            dist                            local
+
 end
 
 # ========================================================================================
 
 code
+
+trigger:
+	if (GetSourceRef() == 11030) // "activate" trigger
+	{
+		rbot = GetParam(1);
+		dist = VectorDist(GetThingPos(rbot), SurfaceCenter(switch));
+		if (dist < 0.5) // if bot is close enough, activate call button
+		{
+			goto activate;
+		}
+	}
+	return;
 
 activate:
         if(firing == 1) Return;
