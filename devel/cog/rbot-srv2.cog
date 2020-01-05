@@ -163,14 +163,12 @@ trigger:
 	if (getparam(0) != botid) return;
 
 	// Bot specific triggers
-	if (GetSourceRef() == 909) // Initialize bot state (preparing to respawn)
+	if (getsourceref() == 950) // New bot respawned
 	{
-		// We do any state initialization here that needs be done prior to bot
-		// creation.  When the bot thing is created, some built-in messages
-		// (e.g. created, entered) are fired at that time.  Those messages may
-		// trigger certain effects, such as manipulation of the botmode, so we
-		// need to ensure that the bot state is properly initialized prior to
-		// creation of the actual bot thing.
+		rbot = GetParam(1);
+		team = GetParam(3);
+
+		// Reinitialize to default bot state
 		botmode = 0x0; // reset botmode
 		inv_weap0 = 1; // saber unlit
 		inv_weap1 = 1; // fists
@@ -192,11 +190,8 @@ trigger:
 		inv_keys = 0x0;
 		curweap = 0;
 		damager = -1;
-	}
-	else if (GetSourceRef() == 950) // New bot respawned
-	{
-		rbot = GetParam(1);
-		team = GetParam(3);
+
+		// Start up bot AI processes, etc.
 		botmode = BitSet(botmode, 0x10000); // bot alive
 		botmode = BitSet(botmode, 0x200000); // bot is able to block with saber
 		if (team == 1) inv_keys = BitSet(inv_keys, 0x1); // Red team - get red CTF key by default

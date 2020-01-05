@@ -437,7 +437,6 @@ trigger:
 		lostcount = 0;
 		stopcount = 0;
 		allowdodge = 1;
-		SendTrigger(-1, 909, botid, -1, -1, -1); // init srv2 state before bot thing creation
 
 		// Create bot
 		rbot = -1;
