@@ -56070,7 +56070,7 @@ World soundclasses 40
 end
 
 Section: cogscripts
-World scripts 75
+World scripts 76
 0: 00_BREAKINGGLASS.COG
 1: 00_CONVEYOR.COG
 2: 00_desttrail.cog
@@ -56128,29 +56128,30 @@ World scripts 75
 54: rbot-backpack.cog
 55: rbot-door.cog
 56: rbot-elev.cog
-57: rbot-nav.cog
-58: rbot-nav-special.cog
-59: rbot-path.cog
-60: rbot-player.cog
-61: rbot-skin.cog
-62: rbot-special.cog
-63: rbot-special-sector.cog
-64: rbot-special-wallcel.cog
-65: rbot-srv.cog
-66: rbot-srv2.cog
-67: rbot-srv-force.cog
-68: rbot-startup.cog
-69: REDCAMERA.COG
-70: SCREAM.COG
-71: SEQCHARGE.COG
-72: TEXTVOICE.COG
-73: TURRET.COG
-74: WAVCONS.COG
+57: rbot-item-special.cog
+58: rbot-nav.cog
+59: rbot-nav-special.cog
+60: rbot-path.cog
+61: rbot-player.cog
+62: rbot-skin.cog
+63: rbot-special.cog
+64: rbot-special-sector.cog
+65: rbot-special-wallcel.cog
+66: rbot-srv.cog
+67: rbot-srv2.cog
+68: rbot-srv-force.cog
+69: rbot-startup.cog
+70: REDCAMERA.COG
+71: SCREAM.COG
+72: SEQCHARGE.COG
+73: TEXTVOICE.COG
+74: TURRET.COG
+75: WAVCONS.COG
 end
 
 Section: cogs
 
-World cogs 408
+World cogs 410
 #Num	Script          Symbol values
 0: CAESARS_START.COG
 1: 00_GENERATOR2.COG 626 306 WOMAN1
@@ -56485,6 +56486,7 @@ World cogs 408
 330: rbot-path.cog 14 459 588 589 590 591 592 593 594 595 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
 331: rbot-path.cog 15 470 596 597 598 599 600 601 602 603 604 605 606 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
 332: rbot-path.cog 16 510 612 611 610 609 608 607 574 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0
+333: rbot-item-special.cog 387 -1 -1 -1 -1 -1 -1 -1 -1 -1 2 0 0 0 0 0 0 0 0 0
 end
 
 Section: TEMPLATES
