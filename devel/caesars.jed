@@ -27540,7 +27540,7 @@ ghost 12.25 9.3425 10.955 0 90 0 636 1
 ghost 10.25 9.3425 10.955 0 90 0 636 1
 
 ghost 7.875 9.3425 10.745 0 90 0 601 1
- size=0.2
+
 ghost 4.5875 9.455 10.745 0 90 0 601 1
  size=0.2
 ghost 2.65 9.455 10.955 0 90 0 637 1
@@ -27572,7 +27572,7 @@ ghost 4.575 -10.695 10.745 0 90 0 605 1
 ghost 6.225 -10.87 10.745 0 90 0 605 1
  size=0.2
 ghost 7.9125 -11.045 10.745 0 90 0 605 1
- size=0.2
+
 ghost 10.25 -11.045 10.955 0 90 0 634 1
 
 ghost 12.25 -11.045 10.955 0 90 0 634 1
@@ -27613,10 +27613,10 @@ ghost 23.6625 -1.2575 5.0925 0 90 0 558 1
  size=0.1
 ghost 19.579 -.654 5.0925 0 90 0 549 1
 
-ghost 23.6625 -1.045 5.0925 0 90 0 555 1
+ghost 23.6625 -1.02 5.0925 0 90 0 555 1
  size=0.1
 ghost 23.6625 -1.045 11.205 0 90 0 35 1
- size=0.1
+ size=0.1 THINGFLAGS=0x2000000
 ghost 23.425 -.9825 11.205 0 90 0 35 1
  size=0.1
 ghost 22.9625 -.6825 11.205 0 90 0 35 1
@@ -28179,7 +28179,7 @@ rbot-skin.cog skinid:int=101 rtemp:template=rbot_kylered weapmesh0:model=red-0.3
 rbot-skin.cog skinid:int=102 rtemp:template=rbot_kylegold weapmesh0:model=yel-0.3do weapmesh1:model=yel-1.3do weapmesh2:model=yel-2.3do weapmesh3:model=yel-3.3do weapmesh4:model=yel-4.3do weapmesh5:model=yel-5.3do weapmesh6:model=yel-6.3do weapmesh7:model=yel-7.3do weapmesh8:model=yel-8.3do weapmesh9:model=yel-9.3do weapmesh10:model=yel-10.3do
 rbot-nav.cog dflt_nodesize:flex=0.15
 rbot-path.cog pathid:int=0 node0:thing=535 node1:thing=465 node2:thing=466 node3:thing=467 node4:thing=468 node5:thing=494 node6:thing=469 node7:thing=470 node8:thing=471 node9:thing=472 node10:thing=473 node11:thing=474 node12:thing=475 node13:thing=476 node14:thing=477 node15:thing=478 node16:thing=479 node17:thing=480 node18:thing=481 node19:thing=-1 node20:thing=-1 node21:thing=-1 node22:thing=-1 node23:thing=-1 node24:thing=-1 unidirectional:int=0 nonlooping:int=0 requirements:int=0
-rbot-nav-special.cog navsp0:thing=461 navsp1:thing=462 navsp2:thing=526 navsp3:thing=536 navsp4:thing=543 navsp5:thing=552 navsp6:thing=562 navsp7:thing=591 navsp8:thing=609 navsp9:thing=-1 navsp10:thing=-1 navsp11:thing=-1 navsp12:thing=-1 navsp13:thing=-1 navsp14:thing=-1 navsp15:thing=-1 navsp16:thing=-1 navsp17:thing=-1 navsp18:thing=-1 navsp19:thing=-1 navspinf0:int=1 navspinf1:int=1 navspinf2:int=1 navspinf3:int=1 navspinf4:int=1 navspinf5:int=1 navspinf6:int=1 navspinf7:int=1 navspinf8:int=1 navspinf9:int=0 navspinf10:int=0 navspinf11:int=0 navspinf12:int=0 navspinf13:int=0 navspinf14:int=0 navspinf15:int=0 navspinf16:int=0 navspinf17:int=0 navspinf18:int=0 navspinf19:int=0
+rbot-nav-special.cog navsp0:thing=461 navsp1:thing=462 navsp2:thing=526 navsp3:thing=536 navsp4:thing=543 navsp5:thing=552 navsp6:thing=562 navsp7:thing=591 navsp8:thing=609 navsp9:thing=463 navsp10:thing=-1 navsp11:thing=-1 navsp12:thing=-1 navsp13:thing=-1 navsp14:thing=-1 navsp15:thing=-1 navsp16:thing=-1 navsp17:thing=-1 navsp18:thing=-1 navsp19:thing=-1 navspinf0:int=1 navspinf1:int=1 navspinf2:int=1 navspinf3:int=1 navspinf4:int=1 navspinf5:int=1 navspinf6:int=1 navspinf7:int=1 navspinf8:int=1 navspinf9:int=1 navspinf10:int=0 navspinf11:int=0 navspinf12:int=0 navspinf13:int=0 navspinf14:int=0 navspinf15:int=0 navspinf16:int=0 navspinf17:int=0 navspinf18:int=0 navspinf19:int=0
 rbot-arrival.cog node0:thing=460 node1:thing=464 node2:thing=524 node3:thing=527 node4:thing=534 node5:thing=538 node6:thing=541 node7:thing=544 node8:thing=550 node9:thing=553 rundir0:int=1 rundir1:int=0 rundir2:int=1 rundir3:int=0 rundir4:int=1 rundir5:int=0 rundir6:int=1 rundir7:int=0 rundir8:int=1 rundir9:int=0 arriver0:thing=25 arriver1:thing=25 arriver2:thing=37 arriver3:thing=37 arriver4:thing=43 arriver5:thing=43 arriver6:thing=142 arriver7:thing=142 arriver8:thing=135 arriver9:thing=135 frame0:int=1 frame1:int=0 frame2:int=1 frame3:int=0 frame4:int=0 frame5:int=1 frame6:int=0 frame7:int=1 frame8:int=0 frame9:int=1 timeout0:flex=10 timeout1:flex=10 timeout2:flex=10 timeout3:flex=10 timeout4:flex=10 timeout5:flex=10 timeout6:flex=10 timeout7:flex=10 timeout8:flex=10 timeout9:flex=10 spinf0:int=32 spinf1:int=64 spinf2:int=32 spinf3:int=64 spinf4:int=32 spinf5:int=64 spinf6:int=32 spinf7:int=64 spinf8:int=32 spinf9:int=64
 rbot-special-sector.cog sp0:sector=26 sp1:sector=165 sp2:sector=164 sp3:sector=-1 sp4:sector=-1 sp5:sector=-1 sp6:sector=-1 sp7:sector=-1 sp8:sector=-1 sp9:sector=-1 sp10:sector=-1 sp11:sector=-1 sp12:sector=-1 sp13:sector=-1 sp14:sector=-1 sp15:sector=-1 sp16:sector=-1 sp17:sector=-1 sp18:sector=-1 sp19:sector=-1 spinf0:int=1024 spinf1:int=1024 spinf2:int=1024 spinf3:int=0 spinf4:int=0 spinf5:int=0 spinf6:int=0 spinf7:int=0 spinf8:int=0 spinf9:int=0 spinf10:int=0 spinf11:int=0 spinf12:int=0 spinf13:int=0 spinf14:int=0 spinf15:int=0 spinf16:int=0 spinf17:int=0 spinf18:int=0 spinf19:int=0
 rbot-path.cog pathid:int=1 node0:thing=482 node1:thing=483 node2:thing=484 node3:thing=485 node4:thing=486 node5:thing=487 node6:thing=488 node7:thing=489 node8:thing=490 node9:thing=491 node10:thing=492 node11:thing=493 node12:thing=-1 node13:thing=-1 node14:thing=-1 node15:thing=-1 node16:thing=-1 node17:thing=-1 node18:thing=-1 node19:thing=-1 node20:thing=-1 node21:thing=-1 node22:thing=-1 node23:thing=-1 node24:thing=-1 unidirectional:int=0 nonlooping:int=0 requirements:int=0
