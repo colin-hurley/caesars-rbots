@@ -57212,7 +57212,7 @@ World things 640
 460: ghost ghost 19.9165 .6335 10.945 0 90 0 26
 461: ghost ghost 20.0415 -.654 10.945 0 90 0 26 size=0.1
 462: ghost ghost 19.854 -.654 10.945 0 90 0 26 size=0.1
-463: ghost ghost 19.854 -.654 5.145 0 90 0 552 size=0.1
+463: ghost ghost 19.8915 -.654 5.145 0 90 0 552 size=0.1
 464: ghost ghost 19.604 -.654 5.145 0 90 0 549
 465: ghost ghost 18.9165 -.654 4.8325 0 90 0 640 size=0.4
 466: ghost ghost 16.4915 -.654 5.02 0 90 0 639
@@ -57275,7 +57275,7 @@ World things 640
 523: ghost ghost 18.35 -8.195 10.955 0 90 0 616
 524: ghost ghost 20.45 -8.195 10.955 0 90 0 616 size=0.1
 525: ghost ghost 20.65 -8.195 10.955 0 90 0 617 size=0.1
-526: ghost ghost 20.65 -8.195 5.0925 0 90 0 28 size=0.1
+526: ghost ghost 20.675 -8.22 5.0925 0 90 0 28 size=0.1
 527: ghost ghost 20.65 -7.995 5.0925 0 90 0 28 size=0.1
 528: ghost ghost 20.65 -5.995 5.0925 0 90 0 28 size=0.1
 529: ghost ghost 20.65 -3.995 5.0925 0 90 0 28 size=0.1
@@ -57292,7 +57292,7 @@ World things 640
 540: ghost ghost 22.3 -.595 10.955 0 90 0 26
 541: ghost ghost 7.9875 -9.545 10.745 0 90 0 605 size=0.1
 542: ghost ghost 8.2625 -9.545 10.745 0 90 0 605 size=0.1
-543: ghost ghost 8.25 -9.545 7.14 0 90 0 156 size=0.1
+543: ghost ghost 8.225 -9.545 7.14 0 90 0 156 size=0.1
 544: ghost ghost 8.5 -9.545 7.14 0 90 0 157 size=0.1
 545: ghost ghost 11.05 -9.62 7.14 0 90 0 157
 546: ghost ghost 10.7625 -8.42 7.14 0 90 0 138 size=0.2
@@ -57301,7 +57301,7 @@ World things 640
 549: ghost ghost 8.975 -8.42 7.14 0 90 0 138 size=0.2
 550: ghost ghost 7.8 8.355 10.745 0 90 0 601 size=0.1
 551: ghost ghost 8.0625 8.3425 10.745 0 90 0 601 size=0.1
-552: ghost ghost 8.05 8.355 7.145 0 90 0 146 size=0.1
+552: ghost ghost 8.025 8.355 7.145 0 90 0 146 size=0.1
 553: ghost ghost 8.3 8.355 7.145 0 90 0 147 size=0.1
 554: ghost ghost 10.95 8.43 7.145 0 90 0 147
 555: ghost ghost 11.1 6.0425 7.145 0 90 0 140
