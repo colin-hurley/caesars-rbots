@@ -577,7 +577,7 @@ trigger:
 		}
 
 		// Reset fall threshold - use bot's current position or node's position, whichever is lower
-		fallcheck = VectorZ(GetThingPos(rbot));
+		fallcheck = VectorZ(GetThingPos(rbot)) - 0.25; // Slightly below bot's height
 		if (VectorZ(newpos) < fallcheck) fallcheck = VectorZ(newpos);
 	}
 	else if (GetSourceRef() == 13012) // New position available (3)
@@ -1031,18 +1031,18 @@ checknode:
 	else
 	{
 		reachednode = 0;
-		tempflex1 = VectorZ(newpos);
-		tempflex2 = VectorZ(GetThingPos(rbot));
+		tempflex1 = VectorZ(GetThingPos(rbot));
+		tempflex2 = tempflex1 - 0.25;
 
 		// Update the fall threshold
 		if (fallcheck < tempflex2) // Bot is above the fall threshold
 		{
-			fallcheck = tempflex2; // Raise the fall threshold to the bot's current height
-			if (fallcheck > tempflex1) fallcheck = tempflex1; // But don't raise the threshold above the node's actual position
+			fallcheck = tempflex2; // Raise the fall threshold to slightly below the bot's current height
+			if (fallcheck > VectorZ(newpos)) fallcheck = VectorZ(newpos); // But don't raise the threshold above the node's actual position
 		}
 
 		// Check if bot has fallen
-		if (node != -1 && (tempflex2 < fallcheck) && !BitTest(nodeflags, 0x2000000)) // if bot is below the fall threshold & new pos is not in water
+		if (node != -1 && (tempflex1 < fallcheck) && !BitTest(nodeflags, 0x2000000)) // if bot is below the fall threshold & new pos is not in water
 		{
 			tempvector1=VectorSet(0,0,VectorZ(newpos));
 			tempvector2=VectorSet(0,0,VectorZ(GetThingPos(rbot)));
