@@ -27867,8 +27867,7 @@ LTS 93
 END
 
 SEC: COGS
-COGS 334
-CAESARS_START.COG
+COGS 333
 00_GENERATOR2.COG trigger:sector=626 generator_pos:thing=306 enemy_tpl:template=WOMAN1
 00_MATANIM.COG animmat:material=00ACP1.MAT fps:flex=3
 00_MATANIM.COG animmat:material=VEGAS.MAT fps:flex=2
