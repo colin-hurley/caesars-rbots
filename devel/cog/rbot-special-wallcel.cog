@@ -14,28 +14,28 @@ symbols
 message		trigger
 
 # Special nodes
-thing		sp0=-1		nolink
-thing		sp1=-1		nolink
-thing		sp2=-1		nolink
-thing		sp3=-1		nolink
-thing		sp4=-1		nolink
-thing		sp5=-1		nolink
-thing		sp6=-1		nolink
-thing		sp7=-1		nolink
-thing		sp8=-1		nolink
-thing		sp9=-1		nolink
+thing		sp0=-1								nolink
+thing		sp1=-1								nolink
+thing		sp2=-1								nolink
+thing		sp3=-1								nolink
+thing		sp4=-1								nolink
+thing		sp5=-1								nolink
+thing		sp6=-1								nolink
+thing		sp7=-1								nolink
+thing		sp8=-1								nolink
+thing		sp9=-1								nolink
 
 # Wall surfaces
-surface		wall0=-1	nolink
-surface		wall1=-1	nolink
-surface		wall2=-1	nolink
-surface		wall3=-1	nolink
-surface		wall4=-1	nolink
-surface		wall5=-1	nolink
-surface		wall6=-1	nolink
-surface		wall7=-1	nolink
-surface		wall8=-1	nolink
-surface		wall9=-1	nolink
+surface		wall0=-1							nolink
+surface		wall1=-1							nolink
+surface		wall2=-1							nolink
+surface		wall3=-1							nolink
+surface		wall4=-1							nolink
+surface		wall5=-1							nolink
+surface		wall6=-1							nolink
+surface		wall7=-1							nolink
+surface		wall8=-1							nolink
+surface		wall9=-1							nolink
 
 # Wall cels
 int			wallcel0=0
@@ -62,9 +62,9 @@ int			spinf8=0
 int			spinf9=0
 
 # Working variables
-int			i			local
-int			botid		local
-thing		node		local
+int			i									local
+int			botid								local
+thing		node								local
 
 end
 
@@ -73,7 +73,7 @@ end
 code
 
 trigger:
-	if (!IsServer()) return;
+	if (IsMulti() && !IsServer()) return; // Host only
 	
 	if (GetSourceRef() == 11010) // Special info request from bot
 	{
@@ -92,7 +92,9 @@ trigger:
 				}
 			}
 		}
+		return;
 	}
+
 	return;
 
 end
